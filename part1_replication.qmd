@@ -1,0 +1,26 @@
+---
+title: "Replication, Specification, and Diagnosis — Part 1: Replication"
+subtitle: "Edgell et al., \"The Institutional Order of Liberalization\""
+author: "Kiel Pechko"
+format:
+  html:
+    toc: true
+    embed-resources: true
+  pdf: default
+---
+
+## Paper Overview
+
+The paper examines whether authoritarian countries follow similar patterns when introducing democratic reforms and whether the order of those reforms differs between countries that eventually democratize and those that do not. To do so the authors analyze several possible indicators that could help predict if nations democratize. To do so the authors look at 371 episodes of liberalization across different countries between the years 1900 and 2019. From there the authors take 24 indicators of democratic institutions and practices from V-Dems dataset. Finally, the authors use a linear regression to examine the relationship between the reform sequences of countries that successfully democratize and those that do not.
+
+When reviewing this paper, it is clear that the authors are clear that these relationships at the moment remain descriptive and not causal. The clearest evidence of the descriptive nature of this is the direct quote, "Our goal is 'mere description', independent of any prior causal propositions." The authors are not saying in this paper that these indicators being used cause a country to democratize just that they show up more often in countries that are successful at democratizing and that from there these indicators can be looked at to predict whether a country will successfully democratize. Hence why the paper uses the terminology indicators and not variables throughout. Overall, from the authors own words the paper is clearly descriptive in nature.
+
+Ultimately, this paper finds that liberalization follows a clear pattern, reforms are similar across outcomes, and electoral administration reforms tend to emerge earlier when liberalization leads to democratization. These results are why this paper matters. These three conclusions allow for some predicting of whether a democratizing country is on the right track and that has huge policy outcomes. It allows for decision makers to determine to make adequate assumptions about the state of a democratizing country whether they are foreign or domestic.
+
+## Discrepancy Paragraph
+
+Overall, there does not appear to be any major differences between these two graphs. The reason for this being two-fold. The first being that the data is confined to 371 episodes of liberalization between 1900 and 2019. Meaning that no new data could be added or subtracted to create differing results. The second reason is that the code to produce the graph is stabile and workable. As a result, there is no variation across the graphs.
+
+## Pipeline Note
+
+The authors provide R construction code that retrieves data from the V-Dem and ERT packages, selects and transforms variables, filters liberalization episodes, and combines the datasets to create the analysis data. They also provide an alternative pre-built CSV file (`eps_data.csv`). Therefore, the materials fall between raw data plus construction code and a pre-built analysis dataset. Granted there where areas where the code needed to be cleaned up before it could function properly. One major issue with it was that the labels and coloring where not working which made it difficult to assess once generated. Another, issue was that the complete data pipeline depends on external packages which needed to be installed or taken account of before it could be run. Overall, this could be classified as between a construction code and pre-built analysis dataset.
